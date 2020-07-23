@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Setting">
+
+    <ListView
+        android:id="@+id/list_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar_setting"/>
+
+    <LinearLayout
+        android:id="@+id/bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="2dp"
+        android:background="@color/colorOrange"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

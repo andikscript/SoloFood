@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="2dp"
+        android:background="@color/colorOrange"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:onClick="backClick"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@null"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+
+        <!--<di dalam scroll view harus ada linear layout></di>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/selat"
+                android:id="@+id/image_food"
+                app:civ_border="true"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/colorOrange"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Title"
+                android:textSize="25sp"
+                android:id="@+id/title_food"/>
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:id="@+id/deskripsi_food"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title_food"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

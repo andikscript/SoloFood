@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash"/>
+
+    <LinearLayout
+        android:layout_below="@+id/image"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="@drawable/custom_box_login"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:elevation="10dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_box_user_pass"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:textColor="@color/colorOrange"
+            android:hint="@string/enter_username"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:drawableRight="@mipmap/iconu"
+            android:paddingRight="15dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_box_user_pass"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColor="@color/colorOrange"
+            android:hint="@string/enter_password"
+            android:paddingLeft="15dp"
+            android:drawableRight="@mipmap/iconp"
+            android:elevation="4dp"
+            android:paddingRight="15dp" />
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:layout_gravity="right"
+            android:buttonTint="@color/colorWhite"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:background="@drawable/custom_button_login"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/login"
+            android:textSize="14sp"
+            android:onClick="loginClick"
+            android:textColor="@color/colorOrange"
+            android:elevation="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/here"
+                android:onClick="clickHere" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

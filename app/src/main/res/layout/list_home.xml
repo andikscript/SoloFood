@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="7dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center|left"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/list_image"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            app:civ_border="true"
+            app:civ_border_color="@color/colorOrange"
+            app:civ_border_width="3dp"
+            android:src="@drawable/selat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Title"
+                android:textStyle="bold"
+                android:id="@+id/list_title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deskripsi"
+                android:textSize="14sp"
+                android:id="@+id/list_deskripsi"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Search">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="2dp"
+        android:background="@color/colorOrange"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPanel"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/colorOrange"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@color/colorOrange"
+            android:textSize="16sp"
+            android:hint="Enter Your Search"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="14sp"
+        android:background="@drawable/custom_button_search"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:onClick="searchClick"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/subTitle"/>
+
+</RelativeLayout>
