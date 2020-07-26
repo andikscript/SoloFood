@@ -11,7 +11,7 @@ This is a repository of learning Android programming and as an assignment from m
 PREVIEW
 -----
 
-![image](resouces/solofood.gif)
+![image](resources/solofood.gif)
 
 ABOUT
 -----
