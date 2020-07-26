@@ -8,6 +8,11 @@ This is an Android project allowing to realize a Solo Food in the simplest way p
 
 This is a repository of learning Android programming and as an assignment from my campus. besides the theme of this application is the Typical Food of the City of Solo
 
+PREVIEW
+-----
+
+![](resouces/solofood.gif)
+
 ABOUT
 -----
 
