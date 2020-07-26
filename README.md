@@ -19,8 +19,7 @@ ABOUT
 Solo Food is an android based application that is made for shows
 typical food from the city of Solo, so as not to be swallowed by the times.
 
-
-AUTHOR
+CONTRIBUTIONS
 -----
 
 You can join contributions with pull request 
