@@ -18,7 +18,7 @@ typical food from the city of Solo, so as not to be swallowed by the times.
 AUTHOR
 -----
 
-MySelf (Single Coding)
+You can join contributions with pull request 
 
 SUPPORT ❤️
 -----
